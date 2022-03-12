@@ -6,6 +6,13 @@ namespace modul3_1302204047
     {
         static void Main(string[] args)
         {
+            var game = new PosisiKarakterGame();
+            game.printStatus();
+            game.setKarakter(Karakter.Jongkok);
+            game.printStatus();
+            game.setKarakter(Karakter.Terbang);
+            game.printStatus();
+
             Console.WriteLine(KodeBuah.getKodeBuah(KodeBuah.Buah.Apel));
             Console.WriteLine(KodeBuah.getKodeBuah(KodeBuah.Buah.Aprikot));
             Console.WriteLine(KodeBuah.getKodeBuah(KodeBuah.Buah.Alpukat));
@@ -20,6 +27,9 @@ namespace modul3_1302204047
             Console.WriteLine(KodeBuah.getKodeBuah(KodeBuah.Buah.Anggur));
             Console.WriteLine(KodeBuah.getKodeBuah(KodeBuah.Buah.Melon));
             Console.WriteLine(KodeBuah.getKodeBuah(KodeBuah.Buah.Semangka));
+
+      
+
         }
     }
 }
